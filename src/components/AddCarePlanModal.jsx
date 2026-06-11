@@ -505,7 +505,7 @@ export default function AddCarePlanModal({ open, onClose, onSave, editPlan, edit
 
   return (
     <div className="fixed inset-0 z-40 bg-black/50 flex items-center justify-center p-4 overflow-y-auto" onClick={e => e.target === e.currentTarget && onClose()}>
-      <div className="bg-white rounded-2xl border border-gray-200 w-full max-w-4xl shadow-2xl flex flex-col" style={{maxHeight:'86vh'}}>
+      <div className="bg-white rounded-2xl border border-gray-200 w-full max-w-4xl shadow-2xl flex flex-col z-50 mt-16" style={{maxHeight:'86vh'}}>
         <div className="flex items-center justify-between px-6 py-4 border-b border-gray-100">
           <div className="flex items-center gap-3">
             <div className="w-10 h-10 rounded-xl bg-blue-50 border border-blue-200 flex items-center justify-center text-xl">📋</div>
