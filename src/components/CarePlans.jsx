@@ -109,7 +109,7 @@ export default function CarePlans({ plans: plansProp, setPlans: setPlansProp }) 
         (!priorityFilter || p.priority === priorityFilter)
       );
     });
-  }, [plans, search, statusFilter, deviceFilter, priorityFilter]);
+  }, [reviewedPlans, search, statusFilter, deviceFilter, priorityFilter]);
 
   function handleSave(plan) {
     setPlans(prev => prev.find(p => p.id === plan.id) ? prev.map(p => p.id === plan.id ? plan : p) : [plan, ...prev]);

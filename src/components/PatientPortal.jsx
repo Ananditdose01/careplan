@@ -6,10 +6,6 @@ import StatusBadge from './StatusBadge';
 import DeviceTag from './DeviceTag';
 import PatientSearch from './PatientSearch';
 
-function patientById(pid) {
-  return PATIENTS.find(patient => patient.id === pid) || PATIENTS[0];
-}
-
 function planProcedures(plan) {
   return (plan.goals || []).flatMap(goal =>
     (goal.procedures || []).map(procedure => ({
